@@ -1,0 +1,44 @@
+{
+    "workbench.colorTheme": "Default Dark Modern",
+    "terminal.integrated.defaultProfile.windows": "Ubuntu (WSL)",
+    "files.eol": "\n",
+    "files.autoSave": "afterDelay",
+    "terminal.integrated.profiles.windows": {
+        "PowerShell": {
+            "source": "PowerShell",
+            "icon": "terminal-powershell"
+        },
+        "Command Prompt": {
+            "path": [
+                "${env:windir}\\Sysnative\\cmd.exe",
+                "${env:windir}\\System32\\cmd.exe"
+            ],
+            "args": [],
+            "icon": "terminal-cmd"
+        },
+        "Git Bash": {
+            "source": "Git Bash"
+        },
+        "Ubuntu (WSL)": {
+            "path": "C:\\WINDOWS\\System32\\wsl.exe",
+            "args": [
+                "-d",
+                "Ubuntu"
+            ]
+        }
+    },
+    "security.allowedUNCHosts": [
+        "wsl.localhost"
+    ],
+    "redhat.telemetry.enabled": true,
+    "editor.fontFamily": "Verdana",
+    "editor.fontSize": 16,
+    "terminal.integrated.fontFamily": "Menlo",
+    "terminal.integrated.fontSize": 18,
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    }
+}
