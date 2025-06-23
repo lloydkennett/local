@@ -8,9 +8,10 @@ PURPLE="\[\033[0;35m\]"
 YELLOW="\[\033[0;33m\]"
 RESTORE="\[\033[0m\]"
 
-PS1="\n\[${GREEN}\]\u@\h"
+PS1="\[${GREEN}\]\u@\h"
 PS1+="\[${YELLOW}\]:\w "
-PS1+="\[${PURPLE}\]$(__git_ps1 " (%s)")"
+PS1+="\[${PURPLE}\]"
+PS1+='$(__git_ps1 "(%s)")'
 PS1+="\[${RESTORE}\]\n\$ "
 
 alias ls="ls --color=auto"
